@@ -1,1 +1,19 @@
-pam_bluetooth.o
+# Secrets & Keys
+*.pem
+*.key
+.env
+.secret
+
+# Python / Venv
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Build Artifacts
+*.o
+*.so
+
+# System / IDE
+.DS_Store
+.vscode/

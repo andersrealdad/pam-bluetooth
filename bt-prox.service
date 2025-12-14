@@ -1,0 +1,11 @@
+[Unit]
+Description=Bluetooth Proximity Unlock Monitor
+After=bluetooth.target
+
+[Service]
+ExecStart=/home/superfuru/pam-bluetooth/bt-prox.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

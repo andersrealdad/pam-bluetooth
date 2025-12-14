@@ -1,0 +1,11 @@
+[Unit]
+Description=Bluetooth Unlock Fallback Server
+After=network.target
+
+[Service]
+ExecStart=/home/superfuru/pam-bluetooth/bt-unlock/.venv/bin/python3 /home/superfuru/pam-bluetooth/bt-unlock/app.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
